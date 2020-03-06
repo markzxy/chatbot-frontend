@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Auth</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/botui/build/botui-theme-default.css" />
+    <style>
+        a { cursor: pointer; }
+        .help-block { font-size: 12px; }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    window.getTimeStr = function(d) {
+        var res = "" + d.getFullYear() + "/" + padZero(d.getMonth() + 1) + 
+        "/" + padZero(d.getDate()) + " " + padZero(d.getHours()) + ":" + 
+        padZero(d.getMinutes()) + ":" + padZero(d.getSeconds());
+        return res;
+    }
+    function padZero(num) {
+        var result;
+        if (num < 10) {
+        result = "0" + num;
+    } else {
+        result = "" + num;
+    }
+        return result;
+    }
+</script>
+
+    <div id="app"></div>
+
+    <!-- credits -->
+    <div class="text-center">
+    </div>
+</body>
+</html>
